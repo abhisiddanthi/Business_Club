@@ -1,0 +1,1013 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="The%20Recommender%20Systems%20Blog_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="The%20Recommender%20Systems%20Blog_files/editdata.mso">
+<link rel=themeData
+href="The%20Recommender%20Systems%20Blog_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="The%20Recommender%20Systems%20Blog_files/colorschememapping.xml">
+<style>
+body {
+    margin: 20%;
+}
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	text-align:center;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	mso-ansi-language:EN-GB;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	mso-ansi-language:EN-GB;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-fareast-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;
+	mso-ansi-language:EN-GB;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.45pt 841.7pt;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-page-numbers:1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:422185440;
+	mso-list-template-ids:21000870;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-.25in;
+	text-decoration:none;
+	text-underline:none;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in;word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoTitle align=left style='text-align:left'><a name="_rzm9h9obomqs"></a><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:18.0pt;
+line-height:115%'>The Recommender Systems Blog<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>�People
+don�t know what they want until you show it to them.� - Steve Jobs<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>An Introduction<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-GB
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="image1.jpg" o:spid="_x0000_i1033" type="#_x0000_t75"
+ style='width:460.8pt;height:234.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image001.jpg"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=614 height=313
+src="The%20Recommender%20Systems%20Blog_files/image002.jpg" v:shapes="image1.jpg"><![endif]></span><span
+lang=EN-GB><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>In 2006,
+Netflix, which was till then an online DVD rental service, introduced a machine
+learning and data mining competition for movie rating prediction. They offered
+$1 million to whoever improved the accuracy of their existing system called <span
+class=SpellE>Cinematch</span> by 10%. This competition continued till 2009 when
+one of the teams finally broke this barrier. Though Netflix never used this
+improved algorithm, the competition still remains fresh in the minds of data
+scientists throughout the world after so many years. But what exactly are
+recommender systems and what's so special about them that Netflix not only offered
+such a huge prize but also risked violating privacy laws by publicly releasing
+the private data of their customers. Read our article to find out.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>From
+cavemen recommending their comrades to stay away from that tempting but
+ultimately deadly fruit to present-day Buzzfeed's quizzes that determine which
+type of cheese you are (yes, that�s a real thing), recommender systems have
+inconspicuously been around since the very beginning of human society. Their
+popularity stems from the very fact that we like to have our peer�s opinions
+before trying out the new movie in the theatre or the new restaurant in town.
+Algorithms that excel at generating recommendations have been taking over this
+task of neighbourly recommendations this past couple of decades. These
+algorithms are what we refer to as recommender systems or <span class=SpellE>RecSys</span>.
+From businesses to researchers, the entire community is involved in development
+of state-of-the-art technology given its diverse real-life and commercial
+applications.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Framing the problem<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>The
+problem of generating recommendations can be framed as a matching task. In
+Netflix�s case, it has a set of users and a set of movie titles on its
+platform. Their recommender system seeks to best match each person to the
+movies they are possibly going to like. One intuitively sees how an
+understanding of the person�s likes and dislikes and the characteristics of
+different movies might aid this matching task. The two broad paradigms of
+recommender systems - Collaborative Filtering and Content Based Filtering make
+use of this very intuition.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Collaborative Filtering<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>This
+strategy is founded on the premise that users who have previously agreed are
+more likely to agree in the future. As a result, people with similar historical
+interests are deemed to be part of a cluster and are expected to be interested
+in comparable material in the near future. Collaborative filtering uses the
+system's interactions and data from other users to filter information. As a
+result, it doesn't require anything other than the consumers' previous
+preferences for a group of things.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>The most
+standard method used in Collaborative Filtering is called the Nearest
+Neighbourhood Algorithm. The basic idea is to find the most similar users to
+your target user (nearest neighbours) and weigh their ratings of an item as the
+prediction of the rating of this item for the target user. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Content Based Filtering<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>This
+paradigm is the content analogue of collaborative filtering. The system seeks
+to recommend items similar to the ones a user has previously liked. This is
+framed as a problem where highly correlated items must be grouped in the same
+genre and recommended to users subscribing to that genre. This approach is best
+suited when there is sufficient information available on the items but not on
+the users.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>The two
+paradigms of recommender systems are closely intertwined and modern hybrid
+recommender systems making use of both are not hard to spot. Similarity
+measures, dimensionality reduction that helps distil the important partitions
+in data and clustering literature have all found extensive use in the domain. <span
+class=SpellE><span class=GramE>Lets</span></span> see how the loss function for
+linear regression can be used to set up a simple recommender.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>A simple Recommender System</span></b><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Going
+back to our previous formulation, we have a set of movies and a set of users
+with us. The users have already rated some movies and we will predict their
+ratings for an unseen movie. If we predict a high rating from the user for a
+particular movie, it gets recommended. For the first part of our model build,
+assume we already have data on the genre of the movie. This is available as an
+(n+1) dimensional vector X where the first entry is always 1 and the rest of
+the n entries are a 0-1 scale rating for belongingness to each genre.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=602
+ style='width:451.45pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid black 1.0pt;mso-yfti-tbllook:1536;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:1.0pt solid black;mso-border-insidev:1.0pt solid black'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>Movie / Genre<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span class=GramE><span lang=EN-GB>X[</span></span><span
+  lang=EN-GB>0]<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span class=GramE><span lang=EN-GB>X[</span></span><span
+  lang=EN-GB>1] -&gt; Horror<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span class=GramE><span lang=EN-GB>X[</span></span><span
+  lang=EN-GB>2] -&gt; Comedy<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>Movie 1<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>1<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>0.9<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>0.2<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>Movie 2<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>1<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>0.01<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>1.0<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Now, we
+just need an (n+1) dimensional embedding &#920; (theta) unique for each user
+that captures their taste in movies. </span><!--[if gte msEquation 12]><m:oMath><i
+ style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:11.0pt;
+ line-height:115%;font-family:"Cambria Math",serif'><m:r>&#1256;</m:r></span></i><m:sSubSup><m:sSubSupPr><span
+   style='font-size:11.0pt;mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;
+   font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+   mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:sSubSupPr><m:e><i
+   style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:11.0pt;
+   line-height:115%;font-family:"Cambria Math",serif'><m:r> �</m:r></span></i><m:sSubSup><m:sSubSupPr><span
+     style='font-size:11.0pt;mso-ansi-font-size:11.0pt;mso-bidi-font-size:11.0pt;
+     font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+     mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:sSubSupPr><m:e><i
+     style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:11.0pt;
+     line-height:115%;font-family:"Cambria Math",serif'><m:r>X</m:r></span></i></m:e><m:sub></m:sub><m:sup><i
+     style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:11.0pt;
+     line-height:115%;font-family:"Cambria Math",serif'><m:r>T</m:r></span></i></m:sup></m:sSubSup></m:e><m:sub></m:sub><m:sup></m:sup></m:sSubSup><i
+ style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-size:11.0pt;
+ line-height:115%;font-family:"Cambria Math",serif'><m:r> (</m:r><m:r>matrix</m:r><m:r>
+  </m:r><m:r>multiplication</m:r><m:r>) </m:r></span></i></m:oMath><![endif]--><![if !msEquation]><span
+lang=EN-GB style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:Arial;position:relative;top:7.0pt;mso-text-raise:-7.0pt;
+mso-font-kerning:0pt;mso-ligatures:none;mso-ansi-language:EN-GB;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:164.4pt;height:22.2pt'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image003.png"
+  o:title="" chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=219 height=30
+src="The%20Recommender%20Systems%20Blog_files/image004.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+lang=EN-GB>gives us the rating for an unseen movie with rating vector X. Voila!
+Generating the best &#920; for a user is achieved via minimising the loss
+function where we use previous ratings for the user given by Y. Here, gradient
+descent runs updates on &#920;.<o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if gte msEquation 12]><m:oMathPara><m:oMath><m:nary><m:naryPr><m:chr
+     m:val="&#8721;"/><span style='font-family:"Cambria Math",serif;mso-ascii-font-family:
+    "Cambria Math";mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:naryPr><m:sub><i
+    style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+    "Cambria Math",serif'><m:r>i</m:r><m:r>:</m:r><m:r>r</m:r><m:r>(</m:r><m:r>i</m:r><m:r>,</m:r><m:r>j</m:r><m:r>)=1</m:r></span></i></m:sub><m:sup></m:sup><m:e></m:e></m:nary><m:sSup><m:sSupPr><span
+    style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+    mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+    style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+    "Cambria Math",serif'><m:r>(</m:r></span></i><m:sSup><m:sSupPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+      style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+      "Cambria Math",serif'><m:r>(</m:r></span></i><m:sSup><m:sSupPr><span
+        style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+        mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+        style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+        "Cambria Math",serif'><m:r>&#920;</m:r></span></i></m:e><m:sup><i
+        style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+        "Cambria Math",serif'><m:r>(</m:r><m:r>j</m:r><m:r>)</m:r></span></i></m:sup></m:sSup><i
+      style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+      "Cambria Math",serif'><m:r>)</m:r></span></i></m:e><m:sup><i
+      style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+      "Cambria Math",serif'><m:r>T</m:r></span></i></m:sup></m:sSup><m:sSup><m:sSupPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+      style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+      "Cambria Math",serif'><m:r>X</m:r></span></i></m:e><m:sup><i
+      style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+      "Cambria Math",serif'><m:r>(</m:r><m:r>i</m:r><m:r>)</m:r></span></i></m:sup></m:sSup><i
+    style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+    "Cambria Math",serif'><m:r> - </m:r></span></i><m:sSup><m:sSupPr><span
+      style='font-family:"Cambria Math",serif;mso-ascii-font-family:"Cambria Math";
+      mso-hansi-font-family:"Cambria Math"'><m:ctrlPr></m:ctrlPr></span></m:sSupPr><m:e><i
+      style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+      "Cambria Math",serif'><m:r>Y</m:r></span></i></m:e><m:sup><i
+      style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+      "Cambria Math",serif'><m:r>(</m:r><m:r>i</m:r><m:r>,</m:r><m:r>j</m:r><m:r>)</m:r></span></i></m:sup></m:sSup><i
+    style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+    "Cambria Math",serif'><m:r>)</m:r></span></i></m:e><m:sup><i
+    style='mso-bidi-font-style:normal'><span lang=EN-GB style='font-family:
+    "Cambria Math",serif'><m:r>2</m:r></span></i></m:sup></m:sSup></m:oMath></m:oMathPara><![endif]--><![if !msEquation]><span
+lang=EN-GB style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:Arial;mso-font-kerning:0pt;mso-ligatures:none;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:167.4pt;height:45.6pt'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image005.png"
+  o:title="" chromakey="white"/>
+</v:shape><![endif]--><![if !vml]><img width=223 height=61
+src="The%20Recommender%20Systems%20Blog_files/image006.png" v:shapes="_x0000_i1025"><![endif]></span><![endif]><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=602
+ style='width:451.45pt;border-collapse:collapse;border:none;mso-border-alt:
+ solid black 1.0pt;mso-yfti-tbllook:1536;mso-padding-alt:0in 5.4pt 0in 5.4pt;
+ mso-border-insideh:1.0pt solid black;mso-border-insidev:1.0pt solid black'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>User / Movie Rating<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span class=GramE><span lang=EN-GB>&#920;[</span></span><span
+  lang=EN-GB>0]<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span class=GramE><span lang=EN-GB>&#920;[</span></span><span
+  lang=EN-GB>1] -&gt; Conjuring<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span class=GramE><span lang=EN-GB>&#920;[</span></span><span
+  lang=EN-GB>2] -&gt; Deadpool<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>User 1<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>1<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>5<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>2<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td width=150 valign=top style='width:112.85pt;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>User 2<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>1<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>1<o:p></o:p></span></p>
+  </td>
+  <td width=150 valign=top style='width:112.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black 1.0pt;mso-border-left-alt:solid black 1.0pt;
+  padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal align=left style='text-align:left;line-height:normal;
+  mso-pagination:none'><span lang=EN-GB>4.5<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>For the
+second part of our build, we realise that maybe if we did not have the rating
+vector X for each movie but have the correct &#920; vector for each user, the
+exact same loss function will find us the best rating vector X. Note however
+that gradient descent will run updates on X and not &#920; this time. Our
+algorithm is beginning to take shape. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>We can
+go ahead with a recursive method, where we initialise &#920; to random values,
+then find the best X vector for this &#920;. We again use this X vector to find
+the best representation of &#920;. This loop goes on until the representations
+of both X and &#920; become static. Interestingly this isn�t required because
+gradient descent can have multiple objectives <span class=GramE>and in our
+model,</span> it can update both X and &#920; for us! <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><span
+style='mso-spacerun:yes'>�</span><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>There,
+you have it, a simple recommender system that actually works pretty well. But
+is this good enough? Recommender Systems have been with us a long time and
+while they started out this simple, they have embraced increasing levels of
+complexity with passing years. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Towards more complex models<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><i style='mso-bidi-font-style:
+normal'><span lang=EN-GB>[The following section delves into advanced methods
+that the industry has embraced for generating recommendations. Readers who wish
+to avoid the fair bit of technical details can safely skip this section.]<o:p></o:p></span></i></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>The 1992
+paper by researchers at Xerox Palo Alto Centre, Goldberg, David, et al.
+&quot;Using collaborative filtering to weave an information tapestry.&quot;
+introduced a mail classification system, Tapestry, which coined the idea of
+numerically defining customer similarity and used a model similar to our build.
+By the end of the first 21st century decade, the central concept of similarity
+had been rehashed, owing to huge work done by e-commerce firms like Amazon.com
+and interest from the Netflix Prize. SVD had emerged as the single most
+important algorithm in the contest so far: an incremental approach to finding
+the Singular Value Decomposition (SVD) of a mostly-blank matrix. Steffen Rendle
+published his work on Factorization <span class=GramE>Machines(</span>FM) in
+2010 that utilised properties of sparsity which are inherent to recommender
+systems.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image4.png" o:spid="_x0000_i1032" type="#_x0000_t75" style='width:451.2pt;
+ height:202.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image007.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=602 height=270
+src="The%20Recommender%20Systems%20Blog_files/image008.png" v:shapes="image4.png"><![endif]></span><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Neural
+network analogues soon followed, with Neural Collaborative Filtering and <span
+class=SpellE>DeepFM</span> which greatly enhanced the working of Collaborative
+Filtering and Factorisation Machines respectively by integrating a neural
+approach. The big <span class=SpellE>bois</span> had also made major gains in
+the meanwhile. Google open-sourced its <span class=SpellE>Wide&amp;Deep</span>
+model, hailed as one of the first major breakthroughs of deep learning in
+recommendation systems. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image2.png" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:451.2pt;
+ height:100.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image009.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=602 height=134
+src="The%20Recommender%20Systems%20Blog_files/image010.png" v:shapes="image2.png"><![endif]></span><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Meta,
+(then Facebook <span class=GramE>:) )</span>, also open-sourced its own model
+DLRM in 2019. The Deep Learning Recommendation Model for Personalization and
+Recommendation Systems uses embeddings to process sparse features that
+represent categorical data and a multilayer perceptron (MLP) to process dense
+features, then interacts these features explicitly using statistical techniques
+proposed by Rendel in Factorisation Machines. Finally, it finds the event
+probability by post-processing the interactions with another MLP. Recommender
+Systems have definitely embraced complexity very well!<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image8.png" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:451.2pt;
+ height:361.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image011.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=602 height=482
+src="The%20Recommender%20Systems%20Blog_files/image012.png" v:shapes="image8.png"><![endif]></span><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<span lang=EN-GB style='font-size:12.0pt;line-height:115%;font-family:"Arial",sans-serif;
+mso-fareast-font-family:Arial;mso-font-kerning:0pt;mso-ligatures:none;
+mso-ansi-language:EN-GB;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='mso-special-character:line-break;page-break-before:always'>
+</span>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Real-Life Applications<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Social Media<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>The
+content in our social media feeds is one of the most common uses of recommender
+systems. We all spend hours looking through our Instagram feeds and never grow
+bored. The recommender system provides items that may be of interest to us
+based on our previous interests. Collaborative Filtering is the most prevalent
+strategy now employed by most social media organisations. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image5.png" o:spid="_x0000_i1029" type="#_x0000_t75" style='width:243pt;
+ height:375.6pt;visibility:visible;mso-wrap-style:square' o:bordertopcolor="black"
+ o:borderleftcolor="black" o:borderbottomcolor="black" o:borderrightcolor="black">
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image013.png"
+  o:title=""/>
+ <w:bordertop type="single" width="8"/>
+ <w:borderleft type="single" width="8"/>
+ <w:borderbottom type="single" width="8"/>
+ <w:borderright type="single" width="8"/>
+</v:shape><![endif]--><![if !vml]><img width=326 height=502
+src="The%20Recommender%20Systems%20Blog_files/image014.png" v:shapes="image5.png"><![endif]></span><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>A major
+drawback of Collaborative Filtering is that when a new item is received, the
+model is not able to recommend that item to anyone until it has been rated by a
+substantial number of users. Similarly, for items in the queue that didn't
+collect a lot of data, the model tends to assign them less weight and
+recommends more popular items, resulting in popularity bias.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>E-Commerce <o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>E-Commerce
+websites are another common user of recommender systems. Based on the user's
+current and previous purchases, they accurately forecast and advise the things
+that the user may require. For example, if you're buying a phone, the website
+may advise you to purchase accessories such as a screen protector or a phone
+case. Using this method, websites are able to increase their consumers' cart
+value. One of the significant differences between this strategy and that utilised
+by social media recommender systems is that items on e-commerce websites can be
+clustered based on their type, price, and other factors. This is a crucial
+consideration because two people who share comparable preferences in scents may
+not share similar likes in clothing. <span class=GramE>Therefore</span>
+e-commerce websites use the method of Content-Based Filtering which takes into
+account the item attributes along with the person�s interests.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>One of
+the most popular companies to have utilised recommender systems for its
+meteoric rise is Amazon. It incorporates a very efficient product recommender
+system that has proved to be a boon for both the company as well as the
+consumers.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB
+style='color:red'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='color:red;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image9.png" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:451.2pt;
+ height:196.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image015.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=602 height=262
+src="The%20Recommender%20Systems%20Blog_files/image016.png" v:shapes="image9.png"><![endif]></span><span
+lang=EN-GB style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB
+style='color:red'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>�Even if
+a competitor were to build the exact same capabilities, a customer � would have
+to spend an inordinate amount of time and energy teaching the competitor what
+the company already knows.� Finally, creating relationships between customers
+can also increase the pre-existing customer base. Customers will recommend the
+website to others and will no longer remain customers, but become promoters.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Customers who Bought this also bought:</span></b><span
+lang=EN-GB> Like many E-commerce sites, Amazon is structured with an
+information page for each product, giving its description. The �Customers who
+Bought this also bought� feature is found on the information page for each
+product in their catalogue. This enables people to link better with other
+consumers using Amazon and makes them consider the recommended product.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image6.png" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:451.8pt;
+ height:258pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image017.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=602 height=344
+src="The%20Recommender%20Systems%20Blog_files/image018.png" v:shapes="image6.png"><![endif]></span><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Cart:</span></b><span lang=EN-GB> The Cart feature
+allows customers to store or save products to be viewed later, this feature is
+mostly used when the customers need to compare one product with another or are
+waiting for a price drop. Amazon uses this feature to understand their customer
+preferences and notify the customer via an email when the price of the product
+has dropped and also recommend similar products to them in the future.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Amazon Filters:</span></b><span lang=EN-GB> Amazon
+Filters is a variation on the �Eyes� feature. Customers select checkboxes to
+choose from a list of specific categories and filters. Periodically Amazon
+sends email announcements to notify registered users of their latest
+recommendations based on the filters used by them in their previous searches.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Customer Comments and reviews: </span></b><span
+lang=EN-GB>Each product page also has customer reviews and comments section
+where customers who have bought a particular product leave their feedback,
+customer recommendations are also based on <span class=GramE>these feedback</span>
+provided. Sentiment analysis of comments is done using NLP techniques and
+comments with positive sentiments are recommended to more customers using
+Amazon.<b style='mso-bidi-font-weight:normal'> </b><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Recommender systems: Contemplating about the future</span></b><span
+lang=EN-GB><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Recommender
+systems are primarily based on machine learning and data analytics. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>They run
+algorithms on massive amounts of curated data to draw conclusions. Data
+analytics and its implementation in recommender systems can have a variety of
+advantages for all the stakeholders, be it the company using it or the
+customers benefiting from its services.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='margin-left:.5in;text-align:left'><span
+lang=EN-GB style='color:red'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='color:red;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image7.png" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:451.8pt;
+ height:120pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image019.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=602 height=160
+src="The%20Recommender%20Systems%20Blog_files/image020.png" v:shapes="image7.png"><![endif]></span><span
+lang=EN-GB style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='color:red;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image3.png" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:451.8pt;
+ height:121.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="The%20Recommender%20Systems%20Blog_files/image021.png"
+  o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=602 height=162
+src="The%20Recommender%20Systems%20Blog_files/image022.png" v:shapes="image3.png"><![endif]></span><span
+lang=EN-GB style='color:red'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>However,
+not just product or service recommendations constitute the domain of
+recommender systems. The pace at which technology has been growing in the past
+few years has led to a lot of interesting and undoubtedly useful applications
+of the recommender system. To mention a few,<o:p></o:p></span></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='text-align:left;mso-list:l0 level1 lfo1'><span
+     lang=EN-GB>Code recommendation and prediction (GitHub Copilot)<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:left;mso-list:l0 level1 lfo1'><span
+     lang=EN-GB>Predictive text (Grammarly)<o:p></o:p></span></li>
+ <li class=MsoNormal style='text-align:left;mso-list:l0 level1 lfo1'><span
+     lang=EN-GB>Sentiment analysis<o:p></o:p></span></li>
+</ol>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Recommender
+systems are still being developed across the world with a hope to improve them
+further and put them to use in varied domains with wider areas of application.
+The Auto <span class=SpellE>RecSys</span> is being developed to replace the
+present-day recommender systems.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>Auto-<span class=SpellE>RecSys</span><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>At
+present recommender systems require to be trained and tuned according to the
+data provided and task requirements, however with the amount of data increasing
+constantly and becoming more and more diverse, it gets more and more
+complicated and expensive to develop new models or tune pre-existing models.
+Hence, Auto <span class=SpellE>RecSys</span> is the <span class=GramE>cutting
+edge</span> recommender system architecture that trains itself based on the
+data provided, it doesn�t require to be trained manually. To be precise, Auto <span
+class=SpellE>RecSys</span> is a <span style='background:white;mso-highlight:
+white'>modular, searchable pipeline architecture tailored for recommendation
+models, which can automatically be used for any type of data provided. With the
+increasing demand for fast and efficient operations, automation has become the
+future of everything.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB>But where does it lead us to? <o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Will we
+move towards a faster, efficient, and yet more comfortable lifestyle? Or will
+we fall prey to irreversible dependencies on data and an ecosystem of AI.
+Recommender systems make us ponder�<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Do the
+machines know more about me than myself? We are moving towards a future where
+our requirements will be fulfilled even before they become our requirements, we
+won�t need to worry about finding the right product or service. Imagine being
+shown ads about gym equipment just because you have been watching a lot of
+fitness videos online. This isn�t imagination anymore.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=left style='text-align:left'><span lang=EN-GB>Recommender
+systems provide unthinkable marketing and manufacturing capabilities to
+companies, and utmost customer satisfaction, but at what cost?<o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
