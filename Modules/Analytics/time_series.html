@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="og:image" content="http://bclub.co.in/blog/img/bank.jpg"/>
+    <meta property="fb:admins" content="100006371020407"/>
+    <meta property="fb:admins" content="100004330893852"/>
+<meta name="og:title" content="World bank and its failure" />
+<meta name="og:description" content="Have Global Governance Institutions Failed Developing Countries?" />
+<meta name="og:url" content="http://bclub.co.in/blog/deep_fake.html" />
+<meta property="og:image" content="http://bclub.co.in/blog/img/bank.jpg" />
+    <title>TIME SERIES AND AUTOREGRESSION</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+<!-- Google analytics code -->
+<script>
+  (function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)}, i[r].l=1*new Date();a=s.createElement(o), 
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-65026905-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google analytics end-->
+    <!-- Bootstrap Core CSS -->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css\clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400, 700, 400italic, 700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic, 400italic, 600italic, 700italic, 800italic, 400, 300, 600, 700, 800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+
+    #manual td, th{
+         padding: 5px;
+
+     }
+     #manual td:first-of-type {
+        font-weight: bold;
+     }
+
+    div.color{
+       height:15px;
+       width: 15px;
+       float: left;
+       margin-right: 5px;
+    }
+
+    #reference .color{
+       height:13px;
+       width: 13px;        
+    }
+
+    div#moderate{
+        background-color: green;
+
+    }
+        
+    div#significant{
+        background-color: yellow;
+    }    
+
+    div#severe{
+        background-color: red;
+    }
+
+    #manual td, th{
+        border: 2px solid black;
+    }
+
+    #empty{
+        border: none;
+    }
+
+</style>
+
+</head>
+
+<body>
+<!-- Facebook SDK added on 10/7/15 -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '836980526380578', 
+      xfbml      : true, 
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="fb-root"></div> <!--Added on 17/08 for like/share -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=836980526380578";
+  fjs.parentNode.insertBefore(js, fjs);F
+}(document, 'script', 'facebook-jssdk'));</script><!-- Facebook SDK ends -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="color:black;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span c lass="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html" style="margin-top:-5px;color:black;"><img src="images/clublogo.png" style="display:inline; width:36px"> Business Club</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="navbar-nav  navbar-right nav">
+                    <li>
+                        <a href="../../blog/index.html" style="color: black;">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="../../modules.html" style="color: black;">Modules</a>
+                    </li>
+                    <li>
+                        <a href="../../contact/contact.html" style="color: black;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="margin:0;padding:0;background-image: url('images/tsa1.png');background-size:fill;">
+    <div class="post-heading" align="center" style="padding-top:199px;padding-bottom:50px;">
+                        <h1 style="margin-top:125px;color:black;">TIME SERIES AND AUTOREGRESSION</h1>
+                        <span class="meta" >Posted by <a href="#" style="color:black;">B-Club, IIT Kharagpur</a> on October 4, 2017</span>
+                    </div>
+    
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="text-align: justify;  text-justify: inter-word;">
+                    <h2>Motivation</h2>
+                    <p>Time series models are useful while working with serially correlated data. Most business
+                        houses work on time series data to analyze sales number (for the next year), website
+                        traffic, competition position and much more.
+                        </p>
+                    <p>Some other important application spheres include:</p>
+                     <ol>
+                        <li>Economics: monthly data for unemployment, hospital admissions, etc.
+                        </li>
+                        <li> Finance - daily exchange rate, a share price, etc</li>
+                        <li>Environmental - daily rainfall, air quality readings.</li>
+                        <li>Medicine - e.g., ECG brain wave activity every 2<sup>-8</sup>
+                            secs</li>
+                     </ol>   
+                    <p>We will consider in detail the the AirPassengers dataset while discussing time series in
+                        detail. You can find the dataset here:
+                        </p>
+                    <a href="https://www.kaggle.com/rakannimer/air-passengers/data">https://www.kaggle.com/rakannimer/air-passengers/data
+                    </a>
+
+                    <p>It is a simple dataset with just two columns and we will be working on Python all the
+                        while. As evident from the figure below, the data gives information about the number of
+                        passengers travelling each month.</p>
+
+                    <p>This is how the data head looks like:
+                        </p>
+                        <p style="text-align: center;"><img src="images/tsa2.png" width="100%"/></p>
+                    <p>The trends look like:</p>>
+                    
+                    <p style="text-align: center;"><img src="images/tsa3.png" width="100%"/></p>
+                    
+                    <p>We see a definite rise in the overall passenger traffic as well as a seasonal nature
+                    </p>
+
+                    <h2>Few Important Terms</h2>
+                    
+                    <ul>
+                        <li><h3>Trends:</h3> Long term movement of mean</li>
+                        <li><h3>Seasonality: </h3>Cyclic fluctuations in calendar.<br>For example, there is seasonality in the monthly data, where high values always
+                            tend to occur in some particular months and low values always tend to occur in
+                            other particular months. In case, S = 12 (months per year) is the span of the
+                            periodic seasonal behavior. For quarterly data, S = 4 time periods per year.
+                            </li>
+                        <li><h3>Schocastic Processes:</h3>
+                            A <b>stochastic or random process</b> is a mathematical object usually defined as a
+                            collection of random variables
+                        </li>
+                        <li><h3>Stationary Process: </h3>
+                        <ul>
+                            <li>Strictly Stationary: Sequence {Xt
+                                ,t} is strictly stationary, if:
+                                <p style="text-align: center;"><img src="images/tsa4.png" width="100%"/></p>
+                            </li>
+                            <li>Weakly Stationary: A process is weakly stationary or second order
+                                stationary if:
+                                <p style="text-align: center;"><img src="images/tsa5.png" width="100%"/></p>
+                                Where, E is the expectation function<p>Basically, the mean and variance should not be a function of time
+                                (property of constant variance is also called homoscedasticity), i.e.
+                                In the first figure, the mean of the series is a function of time while in the
+                                second series the variance of the series changes over time i.e. the width
+                                between peaks and troughs.</p>
+
+                                 <p style="text-align: center;"><img src="images/tsa6.png" width="100%"/></p>
+                            </li>
+                        </ul>
+                        </li>
+                        <li><h3>White Noise: </h3>
+                            A sequence of independent random variables with zero mean and
+                            variance 𝝈
+                            2
+                            is called white noise. It is a weakly stationary series with 𝜸0=𝝈
+                            2
+                             and
+                            𝜸k=0 (k≄0)
+                            </li>
+                        <li><h3>Co-Variance: </h3>
+                            A statistical measure of variation or association of one variable
+X with the other, Y
+<p style="text-align: center;"><img src="images/tsa7.png" width="100%"/></p>
+Where E[X] is the expectation of X, also known as mean of random variable X
+cov(X,Y) is also denoted by 𝝈(X,Y)<br>
+The above equation can be simplified using linearity property of Expectation
+function
+<p style="text-align: center;"><img src="images/tsa8.png" width="100%"/></p>
+Also, 
+<p style="text-align: center;"><img src="images/tsa9.png" width="100%"/></p>
+
+
+                        </li>
+                        <li><h3>Autocovariance: </h3>Autocovariance is the covariance between a stochastic
+                            process at different times.
+                            <p style="text-align: center;"><img src="images/tsa10.png" width="100%"/></p>
+                        </li>
+                        <li><h3>Autocorrelation: </h3>
+                            The autocorrelation function is defined as ratio of 𝜸(k) and
+                            𝜸(0)
+                            <p style="text-align: center;"><img src="images/tsa11.png" width="100%"/></p>
+                        </li>
+                        <li><h3>Autocorrelation and Autocovariance Function:</h3>
+                            The autocovariance function of a weakly stationary process is a capture of variation of
+                            autocovariance with k. It can be expressed as f(k)= 𝜸(k). For example, the
+                            autocovariance function of a stochastic process
+                            <p style="text-align: center;"><img src="images/tsa12.png" width="100%"/></p>                   
+                            Where ut
+ is the white noise (WN(0,𝝈
+2
+)).<br>
+ The autocovariance function for the above process is given by:
+ <p style="text-align: center;"><img src="images/tsa13.png" width="100%"/></p>      
+
+                        <ul>
+                        <li>Note the autocovariance cuts off after lag 1
+                        </li>
+                        <li>Autocorrelation function can be similarly modelled , ⲣ(k) is used instead of 𝜸(k)</li>
+                    
+                    
+                    <li><h4>Autocovariance Matrix</h4></li>
+                    <p style="text-align: center;"><img src="images/tsa14.png" width="100%"/></p>
+                    <li><h4>Autocorrelation Matrix</h4></li>
+                    <p style="text-align: center;"><img src="images/tsa15.png" width="100%"/></p>
+                </ul>
+                    <li><h3>Partial Autocorrelation Function (PACF):</h3></li>
+                    
+                    <p> <b>Partial correlation</b> is different from variance in terms that it is a measure of
+                        association between two random variables, with the effect of one set of contributing
+                        variables removed.
+                        For example, we have data on the consumption, income, and wealth of various
+                        individuals and we wish to see if there is a relationship between consumption and
+                        income, failing to control for wealth. When we compute a correlation coefficient between
+                        consumption and income, the result would be misleading. Since income might be
+                        numerically related to wealth, which in turn might be numerically related to consumption;
+                        a measured correlation between consumption and income might actually be
+                        contaminated by these other correlations. The use of a partial correlation helps avoid
+                        this problem.
+                        
+                        </p>
+                        <ul><li>Partial Autocorrelation is the partial correlation of a time series with its own
+                            lagged values, controlling for the values of the time series at all shorter lags.
+                            </li></ul>
+
+                        <p>The Partial Autocorrelation function(PACF) plays an important role in identifying the lag
+                            of an autoregressive process. The use of this function was introduced as part of the
+                            <a href="https://en.wikipedia.org/wiki/Box%E2%80%93Jenkins">Bob-Jenkins</a> approach to time series modelling.
+                            </p>
+
+                    <p>Going into the mathematical insights of PACF is out of the scope for this text. Only the
+                        plots of PACF are useful in understanding the order of AR(p) and ARMA(p,q) process.
+                        
+                    </p>
+                    <li><h3>General Linear Process:</h3></li>
+                    <p><b>Ѱ weights</b></p>
+                    <p>It is a representation of a stochastic process as the output from a linear filter,
+                        whose input is white noise at
+                        :
+                        </p>
+                        <p style="text-align: center;"><img src="images/tsa16.png" width="100%"/></p>
+                        <p>where:
+                        <img src="images/tsa17.png" width="100%"/></p>
+                            <p>It allows us to represent the process as a weighted sum of present and past
+                                values of the white noise process at
+                                . The following properties of the white noise
+                                should be noted:</p>
+                                <p style="text-align: center;"><img src="images/tsa18.png" width="100%"/></p>
+
+                    <p><b>Π weights</b></p>
+                    <p>An alternative way of modelling a linear process would be by representing the
+                        current deviation as a weighted sum of the previous deviations zt-1
+                        ,zt-2
+                        ,zt-3….</p>
+                        <p style="text-align: center;"><img src="images/tsa19.png" width="100%"/></p>
+                        <p>Relation between Ѱ and Π weights is given by</p>
+                        <p style="text-align: center;"><img src="images/tsa20.png" width="100%"/></p>
+                        <p>Where B is the backshift operator</p>
+                        <p style="text-align: center;"><img src="images/tsa21.png" width="100%"/></p>
+                    </li></ul>
+
+                    <h2>AR Models- AR(p) Process
+                    </h2>
+                    <p>An autoregressive process of order p is represented as</p>
+                    <p style="text-align: center;"><img src="images/tsa22.png" width="100%"/></p>
+                    <p>Where B is the backshift operator and 𝝓1
+                        ,𝝓2
+                        ,𝝓3
+                        ,𝝓4
+                        ,𝝓5…. are adjustable parameters</p>
+                        <p>Mathematically, we compare an AR(p) process with a general linear process to check
+                            stationarity, by imposing the condition:
+                            </p>
+                            <p style="text-align: center;"><img src="images/tsa23.png" width="100%"/></p>
+                        <p>For an AR(1) process the maths works like:</p>
+                        <p style="text-align: center;"><img src="images/tsa24.png" width="100%"/></p>
+                    <p>Which can written as:
+                    </p>
+                    <p style="text-align: center;"><img src="images/tsa25.png" width="100%"/></p>
+                    <ul><li>
+                        The autocorrelation function of an AR(p) Process dies down eventually
+                    </li>
+                <li>
+                    The PACF function for an AR(p) Process cuts off
+                </li></ul>
+                       <h3>Autocorrelation Plot:</h3>
+                       <p style="text-align: center;"><img src="images/tsa26.png" width="100%"/></p>
+                <h3>Partial Autocorrelation Plot:</h3>
+                <p>The partial autocorrelation function is represented by 𝝓kk
+                    k=1,2,3….
+                   For an AR process solving for k=1,2,3.. We obtain</p>
+                   <p style="text-align: center;"><img src="images/tsa27.png" width="100%"/></p>
+                   <p style="text-align: center;"><img src="images/tsa28.png" width="100%"/></p>
+                   <ul>
+                    <li>For an AR(p) process 𝝓kk =0 for k>p and non zero for k ≤ p</li>
+                    <li>Basically the PACF cuts off after lag p</li>
+
+                   </ul>
+                   <p style="text-align: center;"><img src="images/tsa29.png" width="100%"/></p>
+                   <p>The above figure is a plot of an estimated PACF with two standard error limits assuming
+                    the model is AR(1). Since E[𝝓22
+                    ] is also significant, there is a possibility of the process
+                    being AR(2). We can make further investigations to clear our doubts.</p>
+
+
+                    <h2>MA(q) Models : Moving Average Models
+                    </h2>
+                    <p>An MA(q) process looks like:</p>
+                    <p style="text-align: center;"><img src="images/tsa30.png" width="100%"/></p>
+  
+                    <p>Since θB
+                        is a finite set, on comparing an MA process to a general linear process we
+                       always have the summation of ᴪ(B) converging. Hence an MA process is always
+                       stationary. We have to work to establish invertibility of an MA process.
+                       </p>
+                       <ul>
+                        <li>
+                            The autocorrelation function of an MA(q) process cuts off after q
+                            <p style="text-align: center;"><img src="images/tsa31.png" width="100%"/></p>
+                        </li>
+                        <li>While the PACF dies down gradually</li>
+                       </ul>
+                        
+
+                    <h3>Autocorrelation Function:</h3>
+                    <p>Consider an MA(1) process with θ1=0.7<br><center>xt = 10 + wt + .7wt-1</center>
+                    </p>
+                    <p>The theoretical and practical ACF plot might look dissimilar but the trend follows an
+                        overall similar pattern as PACF for an AR process.
+                        </p>
+                        <p style="text-align: center;"><img src="images/tsa32.png" width="100%"/></p>
+                    <p>For an MA(2) process</p>
+                    <p style="text-align: center;"><img src="images/tsa33.png" width="100%"/></p>
+
+                    <h3>Partial Autocorrelation Function:</h3>
+                    <p>PACF for an MA(q) process gradually tapers towards zero in some manner</p>
+                    <p>The PACF plot looks like</p>
+                    <p style="text-align: center;"><img src="images/tsa34.png" width="100%"/></p>
+
+                    <h2>ARMA(p,q) Process: AutoRegressive Moving Average</h2>
+                    <p>It is just the linear combination of the above two processes studied</p>
+                    <h3>General Equation:</h3>
+                    <p style="text-align: center;"><img src="images/tsa35.png" width="100%"/></p>
+                    <p style="text-align: center;"><img src="images/tsa36.png" width="100%"/></p>
+                    <h2>ARIMA(p,d,q) Models- Autoregressive Integrated Moving
+                        Average Models</h2>
+                    <p>It is just a generalization of the ARMA models. ARIMA models are applied in some
+                        cases where data shows evidence of non-stationarity, where an initial differencing step
+                        (corresponding to the "integrated"part of the model) can be applied one or more times to
+                        eliminate the non-stationarity.
+                         </p>
+                    <h3>Non- seasonal ARIMA Models:</h3>
+                    <p>If we combine differencing with autoregression and a moving average model, we obtain
+                        a non-seasonal ARIMA model. ARIMA is an acronym for AutoRegressive Integrated
+                        Moving Average model (“integration” in this context is the reverse of differencing). The full model can be written as
+                        </p>
+                        <p style="text-align: center;"><img src="images/tsa37.png" width="100%"/></p>
+
+                    <p>where yt
+                        is the differenced series (it may have been differenced more than once).
+                        The “predictors” on the right hand side include both lagged values of yt and lagged
+                        errors. We call this an ARIMA(p,d,q) model, where
+                        </p>
+                        <p style="text-align: center;"><img src="images/tsa38.png" width="100%"/></p>
+
+                    <h2>Implementation and Model Identification:
+                    </h2>
+                    <p>Remember: The trends of ACF and PACF would play a key role in choosing a model
+                    </p>
+
+                    <p style="text-align: center;"><img src="images/tsa39.png" width="100%"/></p>
+
+                    <h3>Implementation on our Case Study:
+                    </h3>
+                    <p style="text-align: center;"><img src="images/tsa40.png" width="100%"/></p>
+
+                    <p>1) Visualizing and deriving Inferences</p>
+                        <p>The above is a data visualization from the AirPassengers dataset, capturing their travel
+                            frequencies against time. Such a plot clearly demonstrates seasonality and
+                            non-stationarity(since the variance or the width of the peaks keep on increasing with
+                            time).
+                            </p>
+                            <p style="text-align: center;"><img src="images/tsa41.png" width="100%"/></p>
+                    <p>The data seems to have a trend and seasonality. We will try to break it down into four
+                        components. To make our lives easier, Python has a library called statsmodels. It would
+                        break the data down into an additive model or a multiplicative model.
+                        </p>
+
+                    <h3>Additive Model:</h3>
+                    <p>It works on the principle where the models looks like:<br>
+                        <center>y(t)=Level+Trend+Seasonality+Noise</center></p>
+                    <ul>
+                        <li>An additive model is linear where changes over time are consistently made by
+                            the same amount
+                            </li>
+                            <li>A linear trend is a straight line</li>
+                            <li>A linear seasonality has the same frequency (width of cycles) and amplitude
+                                (height of cycles)</li>
+                    </ul>
+                    
+                    <h3>Multiplicative Model:
+                    </h3>
+                    <p><center>y(t)=Level*Trend*Seasonality*Noise</center>
+                        </p>
+
+                    <ul>
+                        <li>A multiplicative model is nonlinear, such as quadratic or exponential. Changes
+                            increase or decrease over time.
+                            </li>
+                            <li>A nonlinear trend is a curved line.</li>
+                            <li>A non-linear seasonality has an increasing or decreasing frequency and/or
+                                amplitude over time</li>
+                    </ul>
+
+                    <p>From the above plot we can see that it is clearly a Multiplicative model, as it is non
+                        linear, changing nearly as a power of 2.
+                        </p><p>
+                        Real-world problems are messy and noisy. There may be additive and multiplicative
+                        components. There may be an increasing trend followed by a decreasing trend. There
+                        may be non-repeating cycles mixed in with the repeating seasonality components.
+                        </p><p>
+                        Nevertheless, these abstract models provide a simple framework that you can use to
+                        analyze your data and explore ways to think about and forecast your problem.
+                        
+                        
+                                                </p>
+                                                <p style="text-align: center;"><img src="images/tsa42.png" width="100%"/></p>
+                                           
+                    <p>1. A clear inference is the seasonality is at least 12 months.<br>
+                        2. The year on year trend show the number of passengers are increasing without
+                        fail.<br>
+                        3. July and August have a significantly higher seasonal passenger traffic compared
+                        to other months.
+                        </p>
+
+                    <p>2. Stationarize the series</p>
+
+                    <p>When modeling, there are assumptions that the time series we are dealing with is
+                        stationary. In reality, this assumption can be easily violated in time series by the addition
+                        of a trend, seasonality, and other time-dependent structures.<br>
+                        Once we know the patterns, trends, cycles and seasonality , we can check if the series
+                        is stationary or not. Dickey – Fuller is a popular test to check the same. You can read up
+                        on the maths behind Dickey Fuller test; for now we will cover implementation and
+                        inferences
+                        
+                    </p>
+
+
+                    <h3>Augmented Dickey Fuller Test:</h3>
+                    <p>Statistical tests make strong assumptions about your data. They can only be used to
+                        inform the degree to which a null hypothesis can be accepted or rejected. The result
+                        must be interpreted for a given problem to be meaningful.<br><br>
+                        Nevertheless, they can provide a quick check and confirmatory evidence that your time
+                        series is stationary or non-stationary.<br><br>
+                        The Augmented Dickey-Fuller test is a type of statistical test called a unit root test.
+                        The intuition behind a unit root test is that it determines how strongly a time series is
+                        defined by a trend.<br><br>
+                        There are a number of unit root tests and the Augmented Dickey-Fuller is one of the
+                        more widely used . It uses an autoregressive model and optimizes an information
+                        criterion across multiple different lag values.<br><br>
+                        The null hypothesis of the test is that the time series can be represented by a unit root,
+                        that it is not stationary (has some time-dependent structure). The alternate hypothesis
+                        (rejecting the null hypothesis) is that the time series is stationary.
+                        </p>
+
+                    <p>● Null Hypothesis (H0): If accepted, it suggests that the time series has a unit
+                        root, meaning it is non-stationary. It has some time dependent structure.<br>
+                        ● Alternate Hypothesis (H1): The null hypothesis is rejected; it suggests the time
+                        series does not have a unit root, meaning it is stationary. It does not have a
+                        time-dependent structure.
+                        </p>
+
+                    <p>We interpret this result using the p-value from the test. A p-value below a threshold
+                        (such as 5% or 1%) suggests we reject the null hypothesis (stationary), otherwise a
+                        p-value above the threshold suggests we accept the null hypothesis (non-stationary).
+                        </p>
+                        <p>● p-value > 0.05: Accept the null hypothesis (H0), the data has a unit root and is
+                            non-stationary.<br>
+                            ● p-value <= 0.05: Reject the null hypothesis (H0), the data does not have a unit
+                            root and is stationary.</p>
+
+                    <p>Below is an example of calculating the Augmented Dickey-Fuller test, its implementation
+                        on our dataset</p>
+                    <p style="text-align: center;"><img src="images/tsa43.png" width="100%"/></p>
+
+                    <p>Since the p-value > 0.05 we accept the null hypothesis, hence the series is
+                        non-stationary</p>
+
+                    <p>This doesn’t ends here! Now we know that the series is non-stationary, we have to use
+                        some techniques to make it stationary<br><br>
+                        There are three commonly used techniques to make a time series stationary:
+                        </p>
+
+                        <p>1. Detrending : Here, we simply remove the trend component from the time series.
+                            For instance, the equation of my time series is:<br>
+                            <center><b>x(t) = (mean + trend * t) + error</center></b></center>
+                            <br><br>
+                            We’ll simply remove the part in the parentheses and build a model for the rest.
+
+                        </p>
+                        <p>2. Differencing : This is the commonly used technique to remove non-stationarity. Here
+                            we try to model the differences of the terms and not the actual term. For instance,<br><br>
+                            <center><b>x(t) – x(t-1) = ARMA (p , q)</b></center>
+
+                            <br><br>
+                            This differencing is called as the Integration part in AR(I)MA. Now, we have three
+                            parameters<br>
+                            <center><b>p : AR</b></center>
+                            <br>
+                            <center><b>d : I</b></center>
+                            <br>
+                            <center><b>q : MA</b></center>
+                            </p>
+
+                    <p>3. Seasonality : Seasonality can easily be incorporated in the ARIMA model directly.
+                        More on this has been discussed in the applications part below.<br><br>
+                        Before implementing any of above processes on our data we should address the issue
+                        of unequal variances(dealing with trends). We deal with this using log operation on the
+                        series. Trends can be dealt by other mathematical operations like sq. root, cube root,
+                        log etc.<br><br>
+                        Then we resort to differencing to deal with seasonality.
+
+                        <br>
+                        
+                        <p style="text-align: center;"><img src="images/tsa44.png" width="100%"/></p>
+                        <p style="text-align: center;"><img src="images/tsa45.png" width="100%"/></p>
+                        As after our operations, we have brought down the p-value to a lesser level, though not
+0.05, we can reject our null hypothesis with certain confidence interval(would need to
+consult the p-value table for exact confidence interval), hence the series is now more
+stationary.
+
+                        </p>
+                        <p><b>Finding Optimal Parameters:</b></p>
+                        <p>The parameters p,d,q can be found using ACF and PACF plots. In addition to this
+                            approach if both ACF and PACF decrease gradually, it indicates that we need to make
+                            the time series stationary and we introduce a value to “d”</p>
+                            <p style="text-align: center;"><img src="images/tsa46.png" width="100%"/></p>
+                            <p style="text-align: center;"><img src="images/tsa47.png" width="100%"/></p>
+                            <p style="text-align: center;"><img src="images/tsa48.png" width="100%"/></p>
+<p>The ACF and PACF plots clearly don’t follow the standard plots for AR and MA models.
+    Hence the model best fitting here would most probably be an ARIMA model.<br><br>
+    The next question is to determine the order of AR and MA involved.<br><br>
+    1. p – The lag value where the PACF chart crosses the upper confidence interval
+    for the first time. If you notice closely, in this case p=2.<br><br>
+    2. q – The lag value where the ACF chart crosses the upper confidence interval for
+    the first time. If you notice closely, in this case q=2.
+    </p>
+
+                    <p><b>Building Model
+                    </b></p>
+                    <p>We would consider the RSS (Residual Sum of Squares) of all the 3 possibilities, i.e.:
+                        <ol>
+                            <li>ARIMA(2,1,0)</li>
+                            <li>ARIMA(0,1,2)</li>
+                            <li>ARIMA(2,1,2)
+
+                                </li>
+                        </ol>
+                    </p>
+                    
+                    <p><b>ARIMA(2,1,0)</b></p>
+                    <p style="text-align: center;"><img src="images/tsa49.png" width="100%"/></p>
+
+                    <p><b>ARIMA(0, 1, 2)</b></p>
+                    <p style="text-align: center;"><img src="images/tsa50.png" width="100%"/></p>
+
+                    <p><b>ARIMA(2, 1, 2)</b></p>
+                    <p style="text-align: center;"><img src="images/tsa51.png" width="100%"/></p>
+
+                    <p>Evidently among the three models, ARIMA(2,1,2) gives the minimum RSS and
+                        hence is most suitable</p>
+
+                    <p><b>Making Predictions:</b></p>
+                    <p>We need to make sure that we undo all the operations we did on the series to remove
+                        trends and seasonality. The RSS on our modified series and the original might vary, but
+                        we can’t help that!
+                        </p>
+                        <p style="text-align: center;"><img src="images/tsa52.png" width="100%"/></p>
+
+                    <p><b>Finally we can check the RSS on our original data. Go ahead see how well does
+                        your data fit!
+                        </b></p>
+                        <p style="text-align: center;"><img src="images/tsa53.png" width="100%"/></p>
+
+
+                    <!-- sample comment -->
+                    <div class="fb-comments" data-href="http://bclub.co.in/Module/Analytics/time_series.html" data-numposts="5" width=750></div>
+                    <!-- sample comment ends -->
+                    <div class="fb-like" data-href="http://bclub.co.in/Module/Analytics/time_series.html" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" width="100%"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/bclubkgp" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted"><img src="img/clublogo.jpg">  Copyright &copy; Business Club, IIT Kharagpur</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+    <img alt="Have Global Governance Institutions Failed Developing Countries?" rel="Facebook image" src="http://bclub.co.in/blog/img/bank.jpg" style="display: none;">  
+</body>
+
+</html>

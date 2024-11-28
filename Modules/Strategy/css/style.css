@@ -1,0 +1,72 @@
+/* Table Head */
+#table-7 thead th {
+    background-color: #AEDAE4;
+	color: black;
+	border-bottom-width: 0;
+	text-align: center;
+}
+
+/* Column Style */
+#table-7 td {
+	color: black;
+	letter-spacing: 2px;
+	text-align: center;
+}
+/* Heading and Column Style */
+#table-7 tr, #table-7 th, #table-7 td {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* Padding and font style */
+#table-7 td, #table-7 th {
+	padding: 10px 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#table-7 tr.odd {
+	background-color: white;
+}
+
+#table-7 tr.even {
+	background-color: white;
+}
+
+
+
+#table-8 thead th {
+    background-color: #AEDAE4;
+	color: black;
+	border-bottom-width: 0;
+	text-align: center;
+}
+
+/* Column Style */
+#table-8 td {
+	color: black;
+	letter-spacing: 2px;
+	
+}
+/* Heading and Column Style */
+#table-8 tr, #table-8 th, #table-8 td {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* Padding and font style */
+#table-8 td, #table-8 th {
+	padding: 10px 10px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#table-8 tr.odd {
+	background-color: white;
+}
+
+#table-8 tr.even {
+	background-color: white;
+}

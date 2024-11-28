@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="og:image" content="http://bclub.co.in/blog/img/bank.jpg"/>
+    <meta property="fb:admins" content="100006371020407"/>
+    <meta property="fb:admins" content="100004330893852"/>
+<meta name="og:title" content="World bank and its failure" />
+<meta name="og:description" content="Have Global Governance Institutions Failed Developing Countries?" />
+<meta name="og:url" content="http://bclub.co.in/blog/deep_fake.html" />
+<meta property="og:image" content="http://bclub.co.in/blog/img/bank.jpg" />
+    <title>BAGGING AND BOOSTING</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+<!-- Google analytics code -->
+<script>
+  (function(i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)}, i[r].l=1*new Date();a=s.createElement(o), 
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-65026905-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google analytics end-->
+    <!-- Bootstrap Core CSS -->
+    <link href="css\bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css\clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400, 700, 400italic, 700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic, 400italic, 600italic, 700italic, 800italic, 400, 300, 600, 700, 800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+
+    #manual td, th{
+         padding: 5px;
+
+     }
+     #manual td:first-of-type {
+        font-weight: bold;
+     }
+
+    div.color{
+       height:15px;
+       width: 15px;
+       float: left;
+       margin-right: 5px;
+    }
+
+    #reference .color{
+       height:13px;
+       width: 13px;        
+    }
+
+    div#moderate{
+        background-color: green;
+
+    }
+        
+    div#significant{
+        background-color: yellow;
+    }    
+
+    div#severe{
+        background-color: red;
+    }
+
+    #manual td, th{
+        border: 2px solid black;
+    }
+
+    #empty{
+        border: none;
+    }
+
+</style>
+
+</head>
+
+<body>
+<!-- Facebook SDK added on 10/7/15 -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '836980526380578', 
+      xfbml      : true, 
+      version    : 'v2.4'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="fb-root"></div> <!--Added on 17/08 for like/share -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=836980526380578";
+  fjs.parentNode.insertBefore(js, fjs);F
+}(document, 'script', 'facebook-jssdk'));</script><!-- Facebook SDK ends -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="color:black;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span c lass="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html" style="margin-top:-5px;color:black;"><img src="images/clublogo.png" style="display:inline; width:36px"> Business Club</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="navbar-nav  navbar-right nav">
+                    <li>
+                        <a href="../../blog/index.html" style="color: black;">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="../../modules.html" style="color: black";>Modules</a>
+                    </li>
+                    <li>
+                        <a href="../../contact/contact.html" style="color: black";>Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="margin:0;padding:0;background-image: url('images/bagging_boosting_main.png');background-size:fill;">
+    <div class="post-heading" align="center" style="padding-top:199px;padding-bottom:50px;">
+                        <h1 style="margin-top:125px;color:black;">Bagging and Boosting</h1>
+                        <span class="meta" >Posted by <a href="#" style="color: black;">B-Club, IIT Kharagpur</a> on October 4, 2017</span>
+                    </div>
+    
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="text-align: justify;  text-justify: inter-word;">
+                    <h2>Ensemble Learning</h2>
+                    <p>Ensemble in layman terms refers to a group of things/people working towards one
+                      particular job, whether it be an ensemble of actors, singers, dancers etc in a theatrical
+                      production or an ensemble of learners predicting on the same dataset. The power of
+                      ensemble can be best realized in the real world through the example of Kaun Banega
+                      Crorepati, the popular Sony TV show(I hope it still comes on the same TV channel :P ).
+                      There usually a contestant has lifelines like the phone a friend, audience poll and 50:50.
+                      50:50 is an option which gives you a probability of 0.5 of winning, and phone a friend
+                      also has a similar success but audience poll has a very high success rate and we hardly
+                      see the audience getting an answer perhaps once in a blue moon. Now consider each
+                      individual as a learner, each of them is a weak learner in itself with its own capabilities
+                      but when we pool the entire knowledge together we get a much higher probability of
+                      knowing the answer and hence getting the answer correct. Ensemble learning also
+                      addresses learning in the same fashion, and hence creates many learners on the same
+                      dataset and the final outcome is then a weighted average or some other suitable
+                      combination of all of them combined.</p>
+
+                      <p>Having said this there are mainly two popular techniques of ensemble learning:
+                        <ul>
+                          <li>Bagging</li>
+                          <li>Boosting</li>
+                        </ul>
+                      </p>
+                    
+                    <h2>Bagging</h2>
+
+
+                    <p>Bagging stands for Bootstrap Aggregating. Bootstrapping refers to the technique of
+creating a random subset and aggregating means combining them. In this technique,
+one usually creates a number of training datasets from the same dataset by selecting
+data points randomly with replacement and then training the learner on that subset of
+training data. Many such subsets are made and learners are trained independently on
+each of the subsets. Now in case of regression problems the final outcome is taken to
+be the average of all the learners while in classification problems a majority vote is
+taken. Recall that a similar technique is used to reduce overfitting in normal regression
+1
+problems where we create validation datasets and check if we have overfitted or not. In
+a regression to ensure that we do not overfit we create a number of subsets and after
+each training run the learned model on the remaining datasets to see if the error is not
+high. While this ensures that we do not overfit the model here this is used to make a
+stronger model</p>
+
+                    <p>An important point to note here that each learner should have the same model of the
+                      cost function else its purpose will fail. As usual, the cost function in most cases is taken
+                      to be the mean squared error</p>
+                    
+                    <p>Bagging helps in reducing the complexity of the model, as the number of data points
+                      decreases in most cases if not all, the models which are fitted are also simple in nature
+                      and are not very complex functions.</p>
+
+                    <p>Bagging works on the principle of bias-variance :
+                    </p>
+                    
+                    <p style="text-align: center;"><img src="images\bagging_boosting1.png" width="100%"/></p>
+                    
+                    <p>Thus the model is chosen such that both bias and variance and within an acceptable
+                      limit hence we are away from both underfitting and overfitting the model.
+                      </p>
+
+                    <p style="text-align: center;"><img src="images\bagging_boosting2.png" width="100%"/></p>
+                    
+                    <p>Problems and limitations:
+                      <ol>
+                        <li>With a lot of data usually, the same classifier is learned hence it does not help.
+                        </li>
+                        <li>Does not work on linear models because with linear models it usually either
+                          creates the same linear model or creates discontinuous functions which many a
+                          time cannot be combined.
+                          </li>
+                      </ol>
+                    </p>
+                    
+                    <p>To remove this problem what is done is that an extra variance term is added to each
+                      learner. This is done by adding restrictions to individual learners such as allowing only a
+                      subset of features to take decisions in a particular learner. This enforces diversity and
+                      reduces overall bias.
+                      </p>
+                    
+                    <h2>Boosting</h2>
+
+                    <p>So having covered bagging we now come to boosting. Even boosting is based on the
+concept of <b>combining various weak classifiers</b> to obtain a strong model, it differs
+from bagging in the sense that in bagging each classifier or regressor is independent of
+each other while here there is <b>sequential learning</b> hence each classifier is trained such
+that it performs better on the training examples on which it did poorly in the previous
+instance. This means that once we learn or train a dataset, the training on the next
+dataset tries to learn from the errors which it made on the previous dataset.
+</p>
+<p style="text-align: center;"><img src="images/bagging_boosting3.png" width="100%"/></p>
+
+                    <p>So as we see here that we first fit a weak model on the first training set and then plot
+                      the residuals below. The model is then trained on the residuals and the model obtained
+                      is added with the previous model iteratively before finally after 4 iterations we get a
+                      good enough model for our predictions.</p>
+
+                    <p>Boosting are of two types:
+                      <ol>
+                        <li>
+                          <b>Gradient Boosting</b>- Boosting applied on regression problems
+                        </li>
+                        <li>
+                          <b>Adaptive Boosting </b>- Boosting applied on classification problems
+                        </li>
+                      </ol>
+                    </p>
+
+                    <h2>Gradient Boosting</h2>
+
+                    <p>Gradient Boosting is boosting applied on regression problems. Here a sequence of
+                      regressors is trained such that it is able to predict better on the examples it earlier
+                      predicted incorrectly. Hence say Y’ is your set of predictions and Y is the actual dataset.
+                      Then Y’ is updated as Y’[i] = Y’[i] + 𝜶* f[i]
+                      </p>
+
+                    <p>Where f[i] is the derivative of the cost function. The cost function is usually taken to be
+                      the mean squared error which is ∑(Y[i] - Y’[i])2
+                      . Thus f[i] is taken as (Y[i] - Y’[i]). 𝜶
+                      represents the step size of the step we take to reduce the errors.
+                      </p>
+                      <p style="text-align: center;"><img src="images/bagging_boosting4.png" width="100%"/></p>
+                      <p style="text-align: center;"><img src="images/bagging_boosting5.png" width="100%"/></p>
+
+                    <p>Output of a Gradient Boosting Regressor implemented in python</p>
+
+                    <h3>Adaptive Boosting</h3>
+
+                    <p>Adaptive Boosting is a boosting technique used in classification problems. As earlier we
+                      first train a classifier and then for the next model we try to reduce the errors made by
+                      the earlier classifier. This is done by increasing the weights of the points it classified
+                      incorrectly. Hence we minimize the weighted error, in this case, the initial weights are all
+                      equal and as we run the boosting the weights are increased or decreased according to
+                      whether they are classified incorrectly or correctly.
+                      </p>
+
+                    <p style="text-align: center;"><img src="images/bagging_boosting6.png" width="100%"/></p>
+
+                    <p>Note that after each classification the wrong entries’ weights have been increased and
+                      the model is learned to reduce the error on the weighted error.</p>
+
+                    <p><center>Thus J(Θ) = ∑wiJi
+                      (Θ, xi
+                      )
+                      where,</center>
+                      <center>Ji(Θ, xi) = max[0, 1-y(i)Θx(i)]</center></p>
+                      
+                      <p>The weights are given by this formula:
+                      <center>err = wts*(Y-Y’) // error function
+                      𝜶(i) = 0.5log((1-err)/err)
+                      wts = wts* e^(- 𝜶(i)*Y*Y’) // here e is the exponent value
+                      wts = wts/sum(wts)</center>
+                    </p>
+                    <p>The initial weights are initialised by 1/n where n is the number of points.</p>
+
+                    <p style="text-align: center;"><img src="images/bagging_boosting7.png" width="100%"/></p>
+                    
+                    <p style="text-align: center;"><img src="images/bagging_boosting8.png" width="100%"/></p>
+
+                    <p>This is a python based implementation of Adaptive Boosting, Discrete Adaptive Boosting treats
+                      each weak classifier as equally strong while Real Adaptive boosting assigns a probability to each
+                      classifier.
+                      </p>
+
+					
+                    <!-- sample comment -->
+                    <div class="fb-comments" data-href="http://bclub.co.in/blog/deep_fake.html" data-numposts="5" width=750></div>
+                    <!-- sample comment ends -->
+                    <div class="fb-like" data-href="http://bclub.co.in/blog/deep_fake.html" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" width="100%"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/bclubkgp" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted"><img src="img/clublogo.jpg">  Copyright &copy; Business Club, IIT Kharagpur</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+    <img alt="Have Global Governance Institutions Failed Developing Countries?" rel="Facebook image" src="http://bclub.co.in/blog/img/bank.jpg" style="display: none;">  
+</body>
+
+</html>
