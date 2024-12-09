@@ -2276,3 +2276,25 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: border linear 0.2s,box-shadow linear 0.2s;
     transition: border linear 0.2s,box-shadow linear 0.2s;
 }
+
+  
+.hentry:hover {
+	color: #1eb8d8;
+	box-shadow: 0 0 5px #1eb8d8;
+	text-shadow: 0 0 5px #1eb8d8;
+	transform: scale(1.1);
+  }
+  .entry-thumbnail {
+	border:3px solid #000;padding: 1px;
+}
+.entry-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.blogsalignment {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
